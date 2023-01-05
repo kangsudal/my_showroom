@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_showroom/performance_tracker.dart';
+import 'package:my_showroom/whateatgo.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'millie.dart';
@@ -65,49 +66,6 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),
-      ),
-    );
-  }
-}
-
-class Whateatgo extends StatelessWidget {
-  const Whateatgo({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.all(40),
-      height: 400,
-      width: 400,
-      clipBehavior: Clip.hardEdge,
-      decoration: const BoxDecoration(
-        borderRadius: BorderRadius.all(Radius.circular(10)),
-        boxShadow: <BoxShadow>[
-          BoxShadow(
-            color: Colors.black38,
-            blurRadius: 10.0,
-            spreadRadius: -5.0,
-            offset: Offset(0.0, 10.0),
-          )
-        ],
-      ),
-      child: Column(
-        children: [
-          Expanded(
-            flex: 4,
-            child: Container(
-              color: Color(0xffd9deeb),
-            ),
-          ),
-          Expanded(
-            flex: 1,
-            child: Container(
-              color: Colors.white,
-            ),
-          ),
-        ],
       ),
     );
   }
