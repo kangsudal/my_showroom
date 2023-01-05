@@ -70,10 +70,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-Future<void> _launchUrl(String url) async {
-  final Uri _url = Uri.parse(url);
-  if (!await launchUrl(_url)) {
-    throw 'Could not launch $_url';
-  }
-}
