@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import 'component/custom_card.dart';
+import 'custom_card.dart';
 
 class MillieApp extends StatelessWidget {
   const MillieApp({

@@ -8,20 +8,22 @@ class PerformanceTrackerApp extends StatelessWidget {
   }) : super(key: key);
 
   Widget top() {
-    return Padding(
-      padding: const EdgeInsets.all(15.0),
-      child: Container(
-          decoration: const BoxDecoration(
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black38,
-                blurRadius: 10.0,
-                spreadRadius: -20.0,
-                offset: Offset(10, 3.0),
-              )
-            ],
-          ),
-          child: Image.asset('images/performance_tracker_web.png')),
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.all(15.0),
+        child: Container(
+            decoration: const BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black38,
+                  blurRadius: 10.0,
+                  spreadRadius: -20.0,
+                  offset: Offset(10, 3.0),
+                )
+              ],
+            ),
+            child: Image.asset('images/performance_tracker_web.png')),
+      ),
     );
   }
 

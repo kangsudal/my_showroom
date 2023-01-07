@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:my_showroom/performance_tracker.dart';
-import 'package:my_showroom/whateatgo.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:my_showroom/responsive_layout.dart';
+import 'package:my_showroom/web_body.dart';
 
-import 'millie.dart';
-import 'neumorphic.dart';
+import 'component/millie.dart';
+import 'component/neumorphic.dart';
+import 'component/performance_tracker.dart';
+import 'component/whateatgo.dart';
+import 'mobile_body.dart';
 
 const primaryColor = Color(0xFF151026);
 void main() {
@@ -48,23 +50,9 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
-        body: ListView(
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Whateatgo(),
-                NeumorphicCalculatorApp(),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                MillieApp(),
-                PerformanceTrackerApp(),
-              ],
-            ),
-          ],
+        body: ResponsiveLayout(
+          mobileBody: MyMobileBody(),
+          webBody: MyWebBody(),
         ),
       ),
     );
