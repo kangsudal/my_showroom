@@ -12,9 +12,10 @@ class MillieApp extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(
+        Expanded(
+          child: Align(
+            child: Container(
+              padding: EdgeInsets.all(8),
               decoration: const BoxDecoration(
                 boxShadow: [
                   BoxShadow(
@@ -25,22 +26,26 @@ class MillieApp extends StatelessWidget {
                   )
                 ],
               ),
-              child: Image.asset('images/millie1.png')),
+              child: Image.asset('images/millie1.png'),
+            ),
+          ),
         ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(
-              decoration: const BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black38,
-                    blurRadius: 10.0,
-                    spreadRadius: -5.0,
-                    offset: Offset(5.0, 8.0),
-                  )
-                ],
-              ),
-              child: Image.asset('images/millie2.png')),
+        Expanded(
+          child: Align(
+            child: Container(
+                padding: EdgeInsets.all(8),
+                decoration: const BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black38,
+                      blurRadius: 10.0,
+                      spreadRadius: -5.0,
+                      offset: Offset(5.0, 8.0),
+                    )
+                  ],
+                ),
+                child: Image.asset('images/millie2.png')),
+          ),
         ),
       ],
     );

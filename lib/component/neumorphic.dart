@@ -9,37 +9,44 @@ class NeumorphicCalculatorApp extends StatelessWidget {
 
   Widget top() {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(
-              decoration: const BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black38,
-                    blurRadius: 10.0,
-                    spreadRadius: -5.0,
-                    offset: Offset(5.0, 8.0),
-                  )
-                ],
-              ),
-              child: Image.asset('images/calculator1.png')),
+        Expanded(
+          child: Align(
+            child: Container(
+                margin: EdgeInsets.all(8),
+                decoration: BoxDecoration(
+                  // border: Border.all(
+                  //   width: 1,
+                  // ),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black38,
+                      blurRadius: 10.0,
+                      spreadRadius: -5.0,
+                      offset: Offset(5.0, 8.0),
+                    )
+                  ],
+                ),
+                child: Image.asset('images/calculator1.png')),
+          ),
         ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(
-              decoration: const BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black38,
-                    blurRadius: 10.0,
-                    spreadRadius: -5.0,
-                    offset: Offset(5.0, 8.0),
-                  )
-                ],
-              ),
-              child: Image.asset('images/calculator2.png')),
+        Expanded(
+          child: Align(
+            child: Container(
+                margin: const EdgeInsets.all(8.0),
+                decoration: const BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black38,
+                      blurRadius: 10.0,
+                      spreadRadius: -5.0,
+                      offset: Offset(5.0, 8.0),
+                    )
+                  ],
+                ),
+                child: Image.asset('images/calculator2.png')),
+          ),
         ),
       ],
     );

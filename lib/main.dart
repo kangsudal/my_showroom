@@ -26,33 +26,35 @@ class MyApp extends StatelessWidget {
             iconTheme: IconThemeData(color: Color(0xff195b8e)),
             color: Color(0xff195b8e)),
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          // title: Text('kangsudal-dev@naver.com'),
-          flexibleSpace: Padding(
-            padding: const EdgeInsets.only(left: 8.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  '강수경',
-                  style: TextStyle(color: Colors.white),
-                ),
-                Text(
-                  '01035880646',
-                  style: TextStyle(color: Colors.white),
-                ),
-                Text(
-                  'kangsudal-dev@naver.com',
-                  style: TextStyle(color: Colors.white),
-                )
-              ],
+      home: SafeArea(
+        child: Scaffold(
+          appBar: AppBar(
+            // title: Text('kangsudal-dev@naver.com'),
+            flexibleSpace: Padding(
+              padding: const EdgeInsets.only(left: 8.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    '강수경',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  Text(
+                    '01035880646',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  Text(
+                    'kangsudal-dev@naver.com',
+                    style: TextStyle(color: Colors.white),
+                  )
+                ],
+              ),
             ),
           ),
-        ),
-        body: ResponsiveLayout(
-          mobileBody: MyMobileBody(),
-          webBody: MyWebBody(),
+          body: ResponsiveLayout(
+            mobileBody: MyMobileBody(),
+            webBody: MyWebBody(),
+          ),
         ),
       ),
     );
