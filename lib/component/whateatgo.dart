@@ -47,7 +47,7 @@ class Whateatgo extends StatelessWidget {
         IconButton(
             onPressed: () {
               _launchUrl(
-                  'https://medium.com/@kangsudal/%EA%B3%84%EC%86%8D-%EB%B2%84%EB%A0%A4%EC%A0%B8%EC%95%BC%ED%95%A0%EA%B9%8C-d0c9cf1e7639');
+                  'https://blog.naver.com/kangsudal-dev/222982435173');
             },
             icon: Icon(Icons.sticky_note_2_outlined)),
         IconButton(
