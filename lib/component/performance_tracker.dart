@@ -40,12 +40,6 @@ class PerformanceTrackerApp extends StatelessWidget {
             icon: Icon(Icons.play_arrow)),
         IconButton(
             onPressed: () {
-              _launchUrl(
-                  'https://kangsudal.tistory.com/entry/Performance-Tracker');
-            },
-            icon: Icon(Icons.sticky_note_2_outlined)),
-        IconButton(
-            onPressed: () {
               _launchUrl('https://github.com/kangsudal/performance_tracker');
             },
             icon: Image.asset('icons/github-mark.png')),

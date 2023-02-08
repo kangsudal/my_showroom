@@ -64,12 +64,6 @@ class MillieApp extends StatelessWidget {
             icon: Icon(Icons.play_arrow)),
         IconButton(
             onPressed: () {
-              _launchUrl(
-                  'https://kangsudal.tistory.com/entry/%EB%B0%80%EB%A6%AC%EC%9D%98-%EC%84%9C%EC%9E%AC-UI-%ED%81%B4%EB%A1%A0');
-            },
-            icon: Icon(Icons.sticky_note_2_outlined)),
-        IconButton(
-            onPressed: () {
               _launchUrl('https://github.com/kangsudal/millie');
             },
             icon: Image.asset('icons/github-mark.png')),

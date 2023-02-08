@@ -66,12 +66,6 @@ class NeumorphicCalculatorApp extends StatelessWidget {
             icon: Icon(Icons.play_arrow)),
         IconButton(
             onPressed: () {
-              _launchUrl(
-                  'https://kangsudal.tistory.com/entry/%EA%B3%84%EC%82%B0%EA%B8%B0%ED%99%98%EC%9C%A8%EA%B3%84%EC%82%B0%EA%B8%B0');
-            },
-            icon: Icon(Icons.sticky_note_2_outlined)),
-        IconButton(
-            onPressed: () {
               _launchUrl('https://github.com/kangsudal/calculator_neumorphic');
             },
             icon: Image.asset('icons/github-mark.png')),
