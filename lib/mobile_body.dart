@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_showroom/component/tiktok.dart';
 
 import 'component/millie.dart';
 import 'component/neumorphic.dart';
@@ -10,13 +11,27 @@ class MyMobileBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double verticalGap = screenWidth * 0.05;
+    double horizontalGap = screenWidth * 0.1;
     return Scaffold(
       body: ListView(
+        padding: EdgeInsets.fromLTRB(
+          horizontalGap,
+          verticalGap,
+          horizontalGap,
+          verticalGap,
+        ),
         children: [
           Whateatgo(),
+          SizedBox(height: verticalGap),
           NeumorphicCalculatorApp(),
+          SizedBox(height: verticalGap),
           MillieApp(),
+          SizedBox(height: verticalGap),
           PerformanceTrackerApp(),
+          SizedBox(height: verticalGap),
+          TiktokApp(),
         ],
       ),
     );

@@ -5,6 +5,7 @@ class CustomCard extends StatelessWidget {
   final Color backgroundColor;
   final Widget top;
   final Widget bottom;
+
   const CustomCard({
     Key? key,
     required this.backgroundColor,
@@ -15,7 +16,6 @@ class CustomCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.all(40),
       height: 400,
       width: 400,
       clipBehavior: Clip.hardEdge,
