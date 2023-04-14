@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_showroom/component/ministock.dart';
 import 'package:my_showroom/component/tiktok.dart';
 
 import 'component/millie.dart';
@@ -26,10 +27,11 @@ class MyWebBody extends StatelessWidget {
       crossAxisSpacing: 40,
       children: [
         Whateatgo(),
+        TiktokApp(),
         NeumorphicCalculatorApp(),
+        KangsudalMini(),
         MillieApp(),
         PerformanceTrackerApp(),
-        TiktokApp(),
       ],
     );
     return ListView(

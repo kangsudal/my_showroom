@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_showroom/component/ministock.dart';
 import 'package:my_showroom/component/tiktok.dart';
 
 import 'component/millie.dart';
@@ -25,13 +26,15 @@ class MyMobileBody extends StatelessWidget {
         children: [
           Whateatgo(),
           SizedBox(height: verticalGap),
+          TiktokApp(),
+          SizedBox(height: verticalGap),
           NeumorphicCalculatorApp(),
+          SizedBox(height: verticalGap),
+          KangsudalMini(),
           SizedBox(height: verticalGap),
           MillieApp(),
           SizedBox(height: verticalGap),
           PerformanceTrackerApp(),
-          SizedBox(height: verticalGap),
-          TiktokApp(),
         ],
       ),
     );
